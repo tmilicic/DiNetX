@@ -25,9 +25,6 @@ def degree_centrality(graph, alpha=1):
 
     Raises
     ------
-    NetworkXError:
-        If graph is undirected
-
     ValueError:
         If alpha is negative
 
@@ -44,10 +41,6 @@ def degree_centrality(graph, alpha=1):
         Generalizing degree and shortest paths”,
         Soc. Netw. - SOC Netw., vol. 32, no. 3, pp. 245–251, 2010.
     """
-
-    if not graph.is_directed():
-        raise nx.NetworkXError(
-            "degree_centrality() not defined for undirected graphs.")
 
     if alpha < 0:
         raise ValueError("Alpha cannot be negative")
