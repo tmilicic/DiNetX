@@ -22,7 +22,7 @@ def h_degree(graph):
     Returns
     -------
     h_degree_dict: dictionary
-        Values of h_degree for each node
+        Values of h-degree for each node
 
     References:
     ------------
@@ -57,7 +57,7 @@ def in_h_degree(graph):
     Returns
     -------
     h_degree_dict: dictionary
-        Values of h_degree for each node
+        Values of in-h-degree for each node
 
     References:
     ------------
@@ -96,7 +96,7 @@ def out_h_degree(graph):
     Returns
     -------
     h_degree_dict: dictionary
-        Values of h_degree for each node
+        Values of out-h-degree for each node
 
     References:
     ------------
