@@ -61,7 +61,7 @@ def degree_centrality(graph, alpha=1):
 
 def out_degree_centrality(graph, alpha=1):
     """
-    Out degree centrality is a product of the node out degree,
+    Out-degree centrality is a product of the node out-degree,
     and his average out weight adjusted by the tuning parameter.
 
     Parameters
@@ -74,7 +74,7 @@ def out_degree_centrality(graph, alpha=1):
     Returns
     -------
     out_degree_dict: dictionary
-        Values of out degree centrality for each node
+        Values of out-degree centrality for each node
 
     Raises
     ------
@@ -87,9 +87,9 @@ def out_degree_centrality(graph, alpha=1):
     Notes
     -----
     If tuning parameter is between 0 and 1, then nodes with
-    high out degree will have greater out degree centrality.
+    high out-degree will have greater out-degree centrality.
     Otherwise, if parameter is set above 1, nodes with low
-    out degree are taken as favorable.
+    out-degree are taken as favorable.
 
     References
     ----------
@@ -121,7 +121,7 @@ def out_degree_centrality(graph, alpha=1):
 
 def in_degree_centrality(graph, alpha=1):
     """
-    In degree centrality is a product of the node in degree,
+    In-degree centrality is a product of the node in-degree,
     and his average in weight adjusted by the tuning parameter.
 
     Parameters
@@ -134,7 +134,7 @@ def in_degree_centrality(graph, alpha=1):
     Returns
     -------
     in_degree_dict: dictionary
-        Values of in degree centrality for each node
+        Values of in-degree centrality for each node
 
     Raises
     ------
@@ -147,9 +147,9 @@ def in_degree_centrality(graph, alpha=1):
     Notes
     -----
     If tuning parameter is between 0 and 1, then nodes with
-    high in degree will have greater in degree centrality.
+    high in degree will have greater in-degree centrality.
     Otherwise, if parameter is set above 1, nodes with low
-    in degree are taken as favorable.
+    in-degree are taken as favorable.
 
     References
     ----------
