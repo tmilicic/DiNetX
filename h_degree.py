@@ -48,7 +48,7 @@ def in_h_degree(graph):
     is greater or equal to n.
 
     For example if node A has degree 5 and weight of
-    edges 5,3,3,1,1 then it's h-degree will be 3.
+    edges 5,3,3,1,1 then it's in-h-degree will be 3.
 
     Parameters
     ----------
