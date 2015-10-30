@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # DiNetX documentation build configuration file, created by
-# sphinx-quickstart on Fri Oct 30 18:34:13 2015.
+# sphinx-quickstart on Fri Oct 30 18:47:09 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -31,7 +31,6 @@ import shlex
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
     'sphinx.ext.ifconfig',
 ]
 
@@ -112,7 +111,7 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+html_theme = 'haiku'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -286,7 +285,3 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
-
-
-# Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
