@@ -8,7 +8,30 @@ import networkx as nx
 
 
 def global_efficiency(graph, weight=True, to_undirected=False):
+    """
+    Compute value of global efficiency for a given graph.
+    Local efficiency is average efficiency of the local
+    subgraphs.
 
+    Parameters
+    ----------
+    graph: NetworkX graph
+
+    weight: boolean, (default = True)
+        If True then all shortest paths will be computed
+        as a sum of weights of all traversed edges.
+        Else shortest paths will be sum of jumps needed
+        from one node to every other.
+
+    to_undirected: boolean, (default = False)
+        If True all edges will become undirected.
+
+    References
+    ----------
+    .. [1] V. Latora and M. Marchiori,
+        “Efficient Behavior of Small-World Networks”,
+        Phys.Rev. Lett., vol. 87, no. 19, Oct. 2001.
+    """
     n = graph.order()
     sum_dij = 0
 
@@ -34,6 +57,39 @@ def global_efficiency(graph, weight=True, to_undirected=False):
 
 
 def local_efficiency(graph, weight=True, to_undirected=False):
+    """
+    Compute local efficiency for given graph.
+    Local efficiency is the average efficiency of
+    the local subgraphs.
+    
+
+    Parameters
+    ----------
+    graph: NetworkX graph
+
+    weight: boolean, (default = True)
+        If True then all shortest paths will be computed
+        as a sum of weights of all traversed edges.
+        Else shortest paths will be sum of jumps needed
+        from one node to every other.
+
+    to_undirected: boolean, (default = False)
+        If True all edges will become undirected.
+
+    Notes
+    -----
+    Local efficiency shows similar characteristics as
+    clustering coefficient. It reveals how much the system
+    is fault tolerant, in other words it shows how efficient
+    the communication is between the first neighbors of i when
+    i is removed.
+
+    References
+    ----------
+    .. [1] V. Latora and M. Marchiori,
+        “Efficient Behavior of Small-World Networks”,
+        Phys.Rev. Lett., vol. 87, no. 19, Oct. 2001.
+    """
 
     if to_undirected is True:
         graph = graph.to_undirected()
