@@ -10,8 +10,6 @@ import networkx as nx
 def global_efficiency(graph, weight=True, to_undirected=False):
     """
     Compute value of global efficiency for a given graph.
-    Local efficiency is average efficiency of the local
-    subgraphs.
 
     Parameters
     ----------
@@ -58,10 +56,10 @@ def global_efficiency(graph, weight=True, to_undirected=False):
 
 def local_efficiency(graph, weight=True, to_undirected=False):
     """
-    Compute local efficiency for given graph.
+    Compute local efficiency for a given graph.
     Local efficiency is the average efficiency of
     the local subgraphs.
-    
+
 
     Parameters
     ----------
