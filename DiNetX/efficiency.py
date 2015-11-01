@@ -29,7 +29,8 @@ def global_efficiency(graph, weight=True, to_undirected=False):
     :return: Value of global efficiency for given graph
     :rtype: dictionary
 
-    .. seealso:: local_efficiency
+    .. seealso::
+        :py:func:`local_efficiency`
 
     Reference
         .. [1] V. Latora and M. Marchiori,
@@ -81,7 +82,8 @@ def local_efficiency(graph, weight=True, to_undirected=False):
     :return: Value of local efficiency of given graph
     :rtype: dictionary
 
-    .. seealso:: global_efficiency
+    .. seealso::
+        :py:func:`global_efficiency`
 
     .. note::
         Local efficiency shows similar characteristics as
