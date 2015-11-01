@@ -15,20 +15,18 @@ def h_degree(graph):
     For example if node A has degree 4 and weight of
     edges 1,3,3,5 then it's h-degree will be 3.
 
-    Parameters
-    ----------
-    graph: NetworkX graph
+    :param graph: NetworkX graph
 
-    Returns
-    -------
-    h_degree_dict: dictionary
-        Values of h-degree for each node
+    :return: Values of h-degree for each node
 
-    References:
-    ------------
-    .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
-        "h-Degree as a basic measure in weighted networks",
-        Journal of Informetrics 5.4 (2011): 668-677.
+    :rtype: dictionary
+
+    .. seealso: in_h_degree, out_h_degree
+
+    Reference:
+        .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
+            "h-Degree as a basic measure in weighted networks",
+            Journal of Informetrics 5.4 (2011): 668-677.
     """
 
     h_degree_dict = {}
@@ -50,20 +48,18 @@ def in_h_degree(graph):
     For example if node A has degree 5 and weight of
     edges 5,3,3,1,1 then it's in-h-degree will be 3.
 
-    Parameters
-    ----------
-    graph: NetworkX graph
+    :param graph: NetworkX graph
 
-    Returns
-    -------
-    h_degree_dict: dictionary
-        Values of in-h-degree for each node
+    :return: Values of in-h-degree for each node
 
-    References:
-    ------------
-    .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
-        "h-Degree as a basic measure in weighted networks",
-        Journal of Informetrics 5.4 (2011): 668-677.
+    :rtype: dictionary
+
+    .. seealso: h_degree, out_h_degree
+
+    Reference:
+        .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
+            "h-Degree as a basic measure in weighted networks",
+            Journal of Informetrics 5.4 (2011): 668-677.
     """
 
     if not graph.is_directed():
@@ -89,20 +85,18 @@ def out_h_degree(graph):
     For example if node A has out-degree 3 and weight of
     edges 3,3,2 then it's out-h-degree will be 2.
 
-    Parameters
-    ----------
-    graph: NetworkX graph
+    :param graph: NetworkX graph
 
-    Returns
-    -------
-    h_degree_dict: dictionary
-        Values of out-h-degree for each node
+    :return: Values of out-h-degree for each node
 
-    References:
-    ------------
-    .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
-        "h-Degree as a basic measure in weighted networks",
-        Journal of Informetrics 5.4 (2011): 668-677.
+    :rtype: dictionary
+
+    .. seealso: h_degree, in_h_degree
+
+    Reference:
+        .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
+            "h-Degree as a basic measure in weighted networks",
+            Journal of Informetrics 5.4 (2011): 668-677.
     """
 
     if not graph.is_directed():
