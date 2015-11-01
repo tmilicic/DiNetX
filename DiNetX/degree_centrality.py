@@ -26,7 +26,8 @@ def degree_centrality(graph, alpha=1):
         Otherwise, if parameter is set above 1, nodes with low
         degree are taken as favorable.
 
-    .. seealso:: in_degree_centrality, out_degree_centrality
+    .. seealso::
+        :py:func:`in_degree_centrality`, :py:func:`out_degree_centrality`
 
     Reference
         .. [1] F. A. Tore Opsahl, “Node centrality in weighted networks:
@@ -73,7 +74,8 @@ def out_degree_centrality(graph, alpha=1):
         Otherwise, if parameter is set above 1, nodes with low
         out-degree are taken as favorable.
 
-    .. seealso:: in_degree_centrality, degree_centrality
+    .. seealso::
+        :py:func:`in_degree_centrality`, :py:func:`degree_centrality`
 
     Reference
         .. [1] F. A. Tore Opsahl, “Node centrality in weighted networks:
@@ -125,7 +127,8 @@ def in_degree_centrality(graph, alpha=1):
         Otherwise, if parameter is set above 1, nodes with low
         in-degree are taken as favorable.
 
-    .. seealso:: out_degree_centrality, degree_centrality
+    .. seealso::
+        :py:func:`out_degree_centrality`, :py:func:`degree_centrality`
 
     Reference
         .. [1] F. A. Tore Opsahl, “Node centrality in weighted networks:
