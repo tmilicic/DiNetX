@@ -21,7 +21,8 @@ def h_degree(graph):
 
     :rtype: dictionary
 
-    .. seealso: in_h_degree, out_h_degree
+    .. seealso::
+        :py:func:`in_h_degree`, :py:func:`out_h_degree`
 
     Reference:
         .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
@@ -54,7 +55,8 @@ def in_h_degree(graph):
 
     :rtype: dictionary
 
-    .. seealso: h_degree, out_h_degree
+    .. seealso::
+        :py:func:`h_degree`, :py:func:`out_h_degree`
 
     Reference:
         .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
@@ -91,7 +93,8 @@ def out_h_degree(graph):
 
     :rtype: dictionary
 
-    .. seealso: h_degree, in_h_degree
+    .. seealso::
+        :py:func:`h_degree`, :py:func:`in_h_degree`
 
     Reference:
         .. [1] Zhao, Star X., Ronald Rousseau, and Y. Ye Fred.
